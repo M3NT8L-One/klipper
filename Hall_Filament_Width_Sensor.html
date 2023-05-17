@@ -146,14 +146,38 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="Hall_Filament_Width_Sensor.html" hreflang="en" class="md-select__link">
+                  <a href="/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
                 
                 <li class="md-select__item">
-                  <a href="zh/Hall_Filament_Width_Sensor.html" hreflang="zh" class="md-select__link">
+                  <a href="/zh/" hreflang="zh" class="md-select__link">
                     简体中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/zh-Hant/" hreflang="zh-Hant" class="md-select__link">
+                    繁體中文
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/hu/" hreflang="hu" class="md-select__link">
+                    Magyar
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/it/" hreflang="it" class="md-select__link">
+                    Italiano
+                  </a>
+                </li>
+                
+                <li class="md-select__item">
+                  <a href="/fr/" hreflang="fr" class="md-select__link">
+                    Français
                   </a>
                 </li>
                 
@@ -811,6 +835,20 @@
   
   
     <li class="md-nav__item">
+      <a href="Exclude_Object.html" class="md-nav__link">
+        Exclude Objects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Using_PWM_Tools.html" class="md-nav__link">
         Using PWM tools
       </a>
@@ -1216,6 +1254,21 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Sponsors.html" class="md-nav__link">
+        Sponsors
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1297,7 +1350,7 @@
 <h1 id="hall-filament-width-sensor">Hall filament width sensor<a class="headerlink" href="#hall-filament-width-sensor" title="Permanent link">&para;</a></h1>
 <p>This document describes Filament Width Sensor host module. Hardware used for
 developing this host module is based on two Hall linear sensors (ss49e for
-example). Sensors in the body are located opposite sides. Principle of operation:
+example). Sensors in the body are located on opposite sides. Principle of operation:
 two hall sensors work in differential mode, temperature drift same for sensor.
 Special temperature compensation not needed.</p>
 <p>You can find designs at <a href="https://www.thingiverse.com/thing:4138933">Thingiverse</a>,
@@ -1308,9 +1361,9 @@ an assembly video is also available on <a href="https://www.youtube.com/watch?v=
 <h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h2>
 <p>Sensor generates two analog output based on calculated filament width. Sum of
 output voltage always equals to detected filament width. Host module monitors
-voltage changes and adjusts extrusion multiplier. I use aux2 connector on
-ramps-like board analog11 and analog12 pins. You can use different pins and
-differenr boards.</p>
+voltage changes and adjusts extrusion multiplier. I use the aux2 connector on
+a ramps-like board with the analog11 and analog12 pins. You can use different pins
+and different boards.</p>
 <h2 id="template-for-menu-variables">Template for menu variables<a class="headerlink" href="#template-for-menu-variables" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>[menu __main __filament __width_current]
 type: command
@@ -1381,6 +1434,21 @@ at power-on, set the <code>logging</code> parameter to <code>true</code>.</p>
           </div>
         </a>
       
+      
+        
+        <a href="Sponsors.html" class="md-footer__link md-footer__link--next" aria-label="Next: Sponsors" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Sponsors
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
